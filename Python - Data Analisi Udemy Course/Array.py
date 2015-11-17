@@ -33,7 +33,7 @@ my_lists = [my_list1, my_list2]
 print( '\nListe di liste:\n', my_lists )
 
 my_array2 = np.array(my_lists)
-<<<<<<< HEAD
+
 print( 'Array 2D:\n', my_array2)
 print( 'Array 3D:\n', np.array([[1,2,3],[11,22,33],[41,42,43]]) )
 
@@ -127,14 +127,3 @@ print( '\nMax di A o B = ', np.maximum(A[:,:5],B))
 #website = "http://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs"
 #wb.open(website)
 #
-
-
-
-
-
-
-
-
-=======
-print 'Array 2d: ', my_array2
->>>>>>> refs/heads/Work_time
