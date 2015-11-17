@@ -15,3 +15,4 @@ print 'Liste di liste: ', my_lists
 
 my_array2 = np.array(my_lists)
 print 'Array 2d: ', my_array2
+
