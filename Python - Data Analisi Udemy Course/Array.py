@@ -133,3 +133,4 @@ print( '\nMax di A o B = ', np.maximum(A[:,:5],B))
 
 
 
+
