@@ -1,6 +1,5 @@
 # -*- coding: UTF-8 -*-
 
-
 #    NOTE
 # class MyClass(object):
 #      i = 123                   Attributo di Classe
@@ -13,14 +12,12 @@
 # print MyClass.i                Richiamo una variabile definita in un modulo
 # 123
 
-class OnlyOne:
-    
+class OnlyOne:  
     #__Classe ausiliaria che ha solo un costruttore.
     class __OnlyOne:
         # Definisco una classe all'interno di un altra...
         def __init__(self, arg):
-            self.val = arg
-            
+            self.val = arg         
         # Implementazione del metodo __str__() -> <__main__.__OnlyOne instance at 0x00B73B98> + self.val
         def __str__(self):
             return repr(self) + self.val
@@ -56,6 +53,7 @@ z = OnlyOne('frog')
 print(z)
 print(x)
 print(y)
+
 print(`x`)
 print(`y`)
 print(`z`)
