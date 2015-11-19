@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# PythonForProgrammers/SimpleClass.py
+# SimpleClass.py
 class Simple:
     def __init__(self, str):
         # IMP __init__() NON RITORNA NULLA, SEMPRE !!

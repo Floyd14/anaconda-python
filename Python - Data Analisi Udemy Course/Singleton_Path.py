@@ -44,7 +44,7 @@ class Singleton:
 class Path:
     def __init__(self): 
         # __init__ always return NONE !        
-        self.path = 'argomento...'
+        self.path = './Tutorial_AnalisiDati/Temp/'
         self.getPath()
     
     def getPath(self): # Non funziona!
