@@ -56,5 +56,8 @@ class Path:
 # EXEMPLE
 print Path.Instance()
 
+# The print statement converts each of its arguments to a string 
+#(using the __str__ magic method) and writes the result to 
+#standard output separated by spaces.
 
     

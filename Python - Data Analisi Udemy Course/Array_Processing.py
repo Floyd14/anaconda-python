@@ -82,8 +82,7 @@ print( np.in1d( ['France','USA','Italy'], countries ) )
 #******************************************************************************
 #   INPUT - OUTPUT
 #******************************************************************************
-
-from Singleton_Path import *                                            # Usato per definire Variabili Globali   
+from Singleton_Path import *                                            # Singleton usato per definire Variabili Globali   
 
 # Saving on BINARY .npy or .npz
 np.save(str(Path.Instance()) + 'my_array', np.arange(10))                             # Save on binary file .npy
@@ -93,13 +92,10 @@ print( np.load(str(Path.Instance()) +'my_array.npy') )
 np.savez(str(Path.Instance()) +'array_archive', x=np.arange(10), y=np.arange(20))     # Saving and indexing..
 print( np.load(str(Path.Instance()) +'array_archive.npz')['y'] )                      # Loading the y one..
                                         
-
 # Saving and loadin ,txt files
 arr = np.array([[1,2,3],
                 [4,5,6]])
 
 np.savetxt(str(Path.Instance()) +'my_text.txt', arr, delimiter=',' )        # Saving
 print( np.loadtxt(str(Path.Instance()) +'my_text.txt', delimiter=',') )     # Loading
-
-
 
