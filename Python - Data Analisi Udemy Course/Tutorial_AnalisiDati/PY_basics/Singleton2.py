@@ -42,14 +42,14 @@ class Singleton:
 #******************************************
 
 @Singleton
-class Foo:
+class ExempleFoo:
     def __init__(self):
-        print 'Foo created'
+        print 'ExempleFoo created'
 
-#f = Foo()         # Error, this isn't how you get the instance of a singleton
+#f = ExempleFoo()         # Error, this isn't how you get the instance of a singleton
 
-f = Foo.Instance() # Good. Being explicit is in line with the Python Zen
-g = Foo.Instance() # Returns already created instance
+f = ExempleFoo.Instance() # Good. Being explicit is in line with the Python Zen
+g = ExempleFoo.Instance() # Returns already created instance
 
 print f is g # True
     

@@ -83,23 +83,23 @@ print( np.in1d( ['France','USA','Italy'], countries ) )
 #   INPUT - OUTPUT
 #******************************************************************************
 
-from Global import PATH                                                 # Usato per definire Variabili Globali   
+from Singleton_Path import *                                            # Usato per definire Variabili Globali   
 
 # Saving on BINARY .npy or .npz
-np.save( PATH() +'my_array', np.arange(10))                             # Save on binary file .npy
-print( np.load(PATH() +'my_array.npy') )
+np.save( Path.Instance() + 'my_array', np.arange(10))                             # Save on binary file .npy
+print( np.load(Path.Instance() +'my_array.npy') )
 
 # Saving multiple array into a zip file
-np.savez(PATH() +'array_archive', x=np.arange(10), y=np.arange(20))     # Saving and indexing..
-print( np.load(PATH() +'array_archive.npz')['y'] )                      # Loading the y one..
+np.savez(Path.Instance() +'array_archive', x=np.arange(10), y=np.arange(20))     # Saving and indexing..
+print( np.load(Path.Instance() +'array_archive.npz')['y'] )                      # Loading the y one..
                                         
 
 # Saving and loadin ,txt files
 arr = np.array([[1,2,3],
                 [4,5,6]])
 
-np.savetxt(PATH() +'my_text.txt', arr, delimiter=',' )        # Saving
-print( np.loadtxt(PATH() +'my_text.txt', delimiter=',') )     # Loading
+np.savetxt(Path.Instance() +'my_text.txt', arr, delimiter=',' )        # Saving
+print( np.loadtxt(Path.Instance() +'my_text.txt', delimiter=',') )     # Loading
 
 
 
