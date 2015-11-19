@@ -22,7 +22,7 @@ class Simple:
 #     the reference is called self but you could use any identifier you want
 #     (if you do not use self you will probably confuse a lot of people, however).
      
-    def show(self):     # IMP: self lo DEVO mettere perchè usato nel metodo 
+    def show(self):                     # IMP: self lo DEVO mettere perchè usato nel metodo 
         return self.s      
         
     def showMsg(self, msg):
