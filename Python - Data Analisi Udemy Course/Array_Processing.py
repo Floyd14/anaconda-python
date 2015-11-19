@@ -4,7 +4,6 @@
 #******************************************************************************
 #   2) Plot - Processing Arrays - IO
 #******************************************************************************
-
 # Import
 import numpy as np
 import matplotlib.pyplot as plt
@@ -96,4 +95,6 @@ arr = np.array([[1,2,3],
 
 np.savetxt(str(Path.Instance()) +'my_text.txt', arr, delimiter=',' )        # Saving
 print( np.loadtxt(str(Path.Instance()) +'my_text.txt', delimiter=',') )     # Loading
+
+
 

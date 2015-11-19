@@ -39,23 +39,20 @@ class Singleton:
         return isinstance(inst, self._decorated)
  
 @Singleton
-class Path:
+class Path: 
     def __init__(self): 
         # __init__ always return NONE !        
-        self.path = './Tutorial_AnalisiDati/Temp/'
-        self.getPath()
-    
-    def getPath(self): # Non funziona!
-        return self.path
-    
-    def __str__(self):
-        return self.path
+        self.pathTemp = './Tutorial_AnalisiDati/Temp/'           
+        self.pathResource = './Tutorial_AnalisiDati/Resource/'
    
 # EXEMPLE
-print Path.Instance()
+print Path.Instance().pathTemp
+Path.Instance().pathTemp = 'x'
+print Path.Instance().pathTemp
 
 # The print statement converts each of its arguments to a string 
 #(using the __str__ magic method) and writes the result to 
 #standard output separated by spaces.
+
 
     

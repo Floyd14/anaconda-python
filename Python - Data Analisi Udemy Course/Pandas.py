@@ -55,13 +55,17 @@ print( '\n', s3 )
 #******************************************************************************
 #    DATAFRAMES
 #******************************************************************************
+from Singleton_Path import *                                            # Singleton usato per definire Variabili Globali  
+
 
 #Add some data for Exemple
 #import webbrowser as wb
 #website = 'http://en.wikipedia.org/wiki/NFL_win-loss_records'
 #wb.open(website)
 
+
 #Copy and read to get data..then showing
-nfl_frame = pd.read_clipboard() #devo copiare dalla ClipBoard !! retunr Series
-nfl_frame.to_csv(PATH()'nfl_frame.csv')
+nfl_frame = pd.read_clipboard()         # Devo copiare dalla ClipBoard !! return Series
+nfl_frame.to_csv(str(Path.Instance()) + 'nfl_frame.csv')
+
 
