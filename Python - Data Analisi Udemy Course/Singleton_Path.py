@@ -1,5 +1,4 @@
 # -*- coding: UTF-8 -*-
-
 class Singleton:
     """
     A non-thread-safe helper class to ease implementing singletons.
@@ -38,7 +37,6 @@ class Singleton:
 
     def __instancecheck__(self, inst):
         return isinstance(inst, self._decorated)
- 
  
 @Singleton
 class Path:

@@ -46,7 +46,6 @@ for.. in..
 SI USA CON LE TOUPLE = insieme di dati non modificabili
 ''')
 
-
 # Ho due modi per arrivare ad uno stesso risultato ma...
 # Il primo mi fornisce una lista: [a,b,..]
 # Il secondo (MIGLIORE) ritorna un array...
@@ -68,7 +67,6 @@ print( 'La deviazione standard:\t\t\t', arr2.std() )
 print( 'La varianza:\t\t\t\t' , arr2.var() )
 
 print( '\nOrdinare la matrice:\n', np.sort(arr2.reshape(arr2.size)) )
-
 
 print('\n unique() ordina toglie i duplicati...')
 countries = np.array(['France', 'Germany', 'USA', 'Russia','USA','Mexico','Germany'])
